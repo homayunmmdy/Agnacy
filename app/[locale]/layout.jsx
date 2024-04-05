@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./Font.css";
 import "./globals.css";
-import SiteConfig from "@/app/config/site"
+import SiteConfig from "@/app/[locale]/config/site"
+import { useLocale } from "next-intl";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
@@ -11,9 +12,14 @@ export const metadata = {
   description: SiteConfig.description,
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children , params }) {
+  const locale = useLocale();
+
+  if (params.locale !== locale) {
+    notFound();
+  }
   return (
-    <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
+    <html lang={locale}  dir={locale === 'fa' ? 'rtl' : 'ltr'}>
       <body className={inter.className}>
         <Navbar />
         {children}
