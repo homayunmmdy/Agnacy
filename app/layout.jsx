@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: `${SiteConfig.name} | ${SiteConfig.name_en}`,
+  title: SiteConfig.name,
   description: SiteConfig.description,
 };
 

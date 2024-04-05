@@ -1,6 +1,5 @@
 const SiteConfig = {
-  name: "اسم سایت",
-  name_en: "name web",
+  name: "Agancy",
   description: "site description",
   lang: "en",
   dir: "ltr",
