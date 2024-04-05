@@ -5,6 +5,7 @@ import Features from './components/Features'
 import Trusted from './components/Trusted'
 import Quote from './components/Quote'
 import Price from './components/Price'
+import Questions from './components/Questions'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Trusted />
       <Quote />
       <Price />
+      <Questions />
     </div>
   )
 }
