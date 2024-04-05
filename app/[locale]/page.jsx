@@ -6,6 +6,7 @@ import Trusted from './components/Trusted'
 import Quote from './components/Quote'
 import Price from './components/Price'
 import Questions from './components/Questions'
+import Banner from './components/Banner'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Quote />
       <Price />
       <Questions />
+      <Banner />
     </div>
   )
 }
