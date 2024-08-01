@@ -1,25 +1,28 @@
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./Font.css";
 import "./globals.css";
-import SiteConfig from "@/app/[locale]/config/site"
-import { useLocale } from "next-intl";
+import SiteConfig from "./config/site";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: SiteConfig.name,
   description: SiteConfig.description,
+  keywords: SiteConfig.keywords,
+  alternates: {
+    canonical: SiteConfig.siteURL,
+  },
 };
 
-export default function RootLayout({ children , params }) {
-  const locale = useLocale();
-
-  if (params.locale !== locale) {
-    notFound();
-  }
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang={locale}  dir={locale === 'fa' ? 'rtl' : 'ltr'}>
+    <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
       <body className={inter.className}>
         <Navbar />
         {children}
