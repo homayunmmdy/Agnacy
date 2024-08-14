@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Agnacy
 
-## Getting Started
+Agnacy is a single-page website template designed with a clean and modern aesthetic. This template is ideal for creating portfolio websites, showcasing projects, or personal landing pages. It is fully responsive and built using React, Next.js, TypeScript, Tailwind CSS, and DaisyUI, ensuring compatibility across different devices and browsers.
 
-First, run the development server:
+![Screenshot 2024-08-01 at 17-03-22 Agancy](https://github.com/user-attachments/assets/078c5a07-1877-4e75-8d8d-70790a721f71)
+
+
+## Features
+
+- **Single-Page Design:** Smooth scrolling between sections for a seamless user experience.
+- **Responsive Layout:** Fully optimized for desktop, tablet, and mobile devices.
+- **Modern Design:** Clean and minimalist style that emphasizes content.
+- **Easy to Customize:** Well-organized code and comments for easy modification.
+
+## Technologies Used
+
+- **React:** For building dynamic user interfaces.
+- **Next.js:** Server-side rendering and static site generation.
+- **TypeScript:** Type safety and improved developer experience.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **DaisyUI:** Components library for Tailwind CSS.
+
+## Usage
+
+To use this template, simply clone or download the repository and customize it according to your needs:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/homayunmmdy/Agnacy.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once downloaded, you can install the dependencies and start the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd Agnacy
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Customization
 
-## Learn More
+- **Content:** Modify the components in the `pages` and `components` directories to add your own content.
+- **Styles:** Tailwind CSS allows you to easily customize styles by editing utility classes directly in your components.
+- **JavaScript/TypeScript:** Update the code in the `.ts` and `.tsx` files to add or modify functionality.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you find any bugs or have suggestions for improvement, feel free to open an issue or submit a pull request.
